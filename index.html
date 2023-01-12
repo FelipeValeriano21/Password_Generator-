@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>Gerador de senha</h1>
+    </header>
+
+    <main>
+        <input  id="pi_input" type="range" min="5" max="25" step="1" >
+    </main>
+
+    <div>
+        <p style="font-size: 20px; font-family:cursive">Tamanho: <output style="color: rgb(0, 255, 0);" id="value"></output></p>
+    </div>
+
+    <div>
+        <button id ="acao"onclick="geraStringAleatoria(8)">Gerar</button>
+    </div>
+
+    <div>
+        <p id = "mensagem">A senha gerada é</p>
+      
+
+    </div>
+
+    <div class="box-password" id="box-password">
+        <p id = "resposta"><B>dsadosadasdsa</B></p>
+    </div>
+
+    <div onclick="Copiar()" class="copy" id="copy">
+        <p id = "copiar">Copiar senha <span class="material-symbols-outlined">
+            copy_all
+            </span></p>
+    </div>
+
+<script src="script.js"></script>    
+</body>
+</html>
